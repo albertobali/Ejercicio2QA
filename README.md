@@ -1,5 +1,8 @@
 Requisitos
 - Java 11
+- Gherkin
+- Cucumber
+- Karate
 - IDE compatible con Java, como IntelliJ IDEA
 - Las dependencias del proyecto se pueden instalar con el comando mvn clean install.
 
