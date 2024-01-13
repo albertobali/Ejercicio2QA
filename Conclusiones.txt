@@ -1,0 +1,27 @@
+# Conclusiones del Ejercicio 2 de la API PetStore
+
+## Hallazgos
+
+Durante la ejecución de las pruebas con Karate, se observaron los siguientes hallazgos:
+
+- **Añadir Mascota:**
+  - La operación de añadir una mascota se ejecutó correctamente.
+  - Se verificó que el estado de la mascota es "available".
+
+- **Consultar Mascota por ID:**
+  - La operación de consultar la mascota por ID del último registro se ejecutó correctamente.
+  - Se verificó que la mascota ingresada previamente existe y tiene la información correcta.
+
+- **Actualizar Mascota:**
+  - La operación de actualizar la mascota se ejecutó correctamente.
+  - Se verificó que el nombre de la mascota y su estado se actualizaron correctamente.
+
+- **Consultar Mascota por Estatus:**
+  - La operación de consultar la mascota por estatus se ejecutó correctamente.
+  - Se verificó que las mascotas con el estado "sold" fueron recuperadas correctamente.
+
+## Conclusiones Generales
+
+- La automatización de la API de la tienda de mascotas PetStore se realizó correctamente.
+- Los escenarios de prueba se ejecutaron correctamente, validando la funcionalidad de la API.
+
