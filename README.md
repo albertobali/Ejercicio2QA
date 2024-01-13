@@ -13,4 +13,8 @@ Instrucciones de instalación
 
 Instrucciones de ejecución
 - Abre el proyecto en tu IDE.
-- Ejecuta las pruebas con el comando: mvn test -Dcucumber.filter.tags="@AUTOMATIZACION_SAUCEDEMO"
+- Ejecuta las pruebas con los siguientes comando:
+    * mvn test -Dkarate.options="--tags @añadirMascota"
+    * mvn test -Dkarate.options="--tags @consultarMascotaPorID"
+    * mvn test -Dkarate.options="--tags @actualizarMascota"
+    * mvn test -Dkarate.options="--tags @buscarMascotaPorStatus"
