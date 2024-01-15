@@ -14,7 +14,7 @@ Instrucciones de instalación
 Instrucciones de ejecución
 - Abre el proyecto en tu IDE.
 - Ejecuta las pruebas con los siguientes comando:
-    * mvn test -Dkarate.options="--tags @añadirMascota"
-    * mvn test -Dkarate.options="--tags @consultarMascotaPorID"
-    * mvn test -Dkarate.options="--tags @actualizarMascota"
-    * mvn test -Dkarate.options="--tags @buscarMascotaPorStatus"
+    * mvn clean test -Dtest=runner -Dkarate.options="--tags @añadirMascota"
+    * mvn clean test -Dtest=runner -Dkarate.options="--tags @consultarMascotaPorID"
+    * mvn clean test -Dtest=runner -Dkarate.options="--tags @actualizarMascota"
+    * mvn clean test -Dtest=runner -Dkarate.options="--tags @buscarMascotaPorStatus"
