@@ -14,9 +14,6 @@ Instrucciones de instalación
 Instrucciones de ejecución
 - Abre el proyecto en tu IDE.
 - Ejecuta las pruebas con los siguientes comando:
-    * mvn clean test -Dtest=runner -Dkarate.options="--tags @añadirMascota"
-    * mvn clean test -Dtest=runner -Dkarate.options="--tags @consultarMascotaPorID"
-    * mvn clean test -Dtest=runner -Dkarate.options="--tags @actualizarMascota"
-    * mvn clean test -Dtest=runner -Dkarate.options="--tags @buscarMascotaPorStatus"
+    * mvn clean test -Dtest=runner
 - El reporte se encuentra en la siguiente ruta:
     * /target/karate-reports/karate-summary.html
