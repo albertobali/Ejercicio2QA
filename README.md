@@ -18,3 +18,5 @@ Instrucciones de ejecución
     * mvn clean test -Dtest=runner -Dkarate.options="--tags @consultarMascotaPorID"
     * mvn clean test -Dtest=runner -Dkarate.options="--tags @actualizarMascota"
     * mvn clean test -Dtest=runner -Dkarate.options="--tags @buscarMascotaPorStatus"
+- El reporte se encuentra en la siguiente ruta:
+    * /target/karate-reports/karate-summary.html

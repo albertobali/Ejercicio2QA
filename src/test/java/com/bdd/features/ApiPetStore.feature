@@ -2,29 +2,13 @@ Feature: API de tienda PetStore
 
   Background:
     Given url urlBase
+    * def body = read('classpath:bdd/req/body_addMascota.json')
+    * def bodyUpdate = read('classpath:bdd/req/body_updateMascota.json')
 
   @añadirMascota
   Scenario: Añadir una mascota a la tienda
     Given path '/pet'
-    And request
-    """
-    {
-      "id": 914,
-      "category": {
-        "id": 914,
-        "name": "string"
-      },
-      "name": "Boby",
-      "photoUrls": ["string"],
-      "tags": [
-        {
-          "id": 0,
-          "name": "string"
-        }
-      ],
-      "status": "available"
-    }
-    """
+    And request body
     When method post
     Then status 200
 
@@ -37,25 +21,7 @@ Feature: API de tienda PetStore
   @actualizarMascota
   Scenario: Actualizar el nombre de la mascota y el estatus a “sold”
     Given path '/pet'
-    And request
-    """
-    {
-      "id": 914,
-      "category": {
-        "id": 914,
-        "name": "string"
-      },
-      "name": "BobyUpdate",
-      "photoUrls": ["string"],
-      "tags": [
-        {
-          "id": 0,
-          "name": "string"
-        }
-      ],
-      "status": "sold"
-    }
-    """
+    And request bodyUpdate
     When method put
     Then status 200
 

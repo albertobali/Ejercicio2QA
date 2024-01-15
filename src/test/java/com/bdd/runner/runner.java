@@ -7,7 +7,7 @@ public class runner {
     @Karate.Test
     Karate testSystemProperty() {
         return Karate.run("classpath:com/bdd/features")
-                .tags("@buscarMascotaPorStatus")
+                .tags("@añadirMascota")
                 .karateEnv("cert");
     }
 }
