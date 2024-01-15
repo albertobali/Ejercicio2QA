@@ -2,8 +2,8 @@ Feature: API de tienda PetStore
 
   Background:
     Given url urlBase
-    * def body = read('classpath:bdd/req/body_addMascota.json')
-    * def bodyUpdate = read('classpath:bdd/req/body_updateMascota.json')
+    * def body = read('classpath:com/bdd/req/body_addMascota.json')
+    * def bodyUpdate = read('classpath:com/bdd/req/body_updateMascota.json')
 
   @añadirMascota
   Scenario: Añadir una mascota a la tienda
@@ -14,7 +14,7 @@ Feature: API de tienda PetStore
 
   @consultarMascotaPorID
   Scenario: Consultar mascota por ID
-    Given path '/pet/914'
+    Given path '/pet/922'
     When method get
     Then status 200
 
