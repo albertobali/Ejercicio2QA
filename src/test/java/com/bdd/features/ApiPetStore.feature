@@ -14,7 +14,7 @@ Feature: API de tienda PetStore
 
   @consultarMascotaPorID
   Scenario: Consultar mascota por ID
-    Given path '/pet/922'
+    Given path '/pet/988'
     When method get
     Then status 200
 
