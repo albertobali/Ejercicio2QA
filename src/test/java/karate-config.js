@@ -12,11 +12,10 @@ function fn() {
  if (env === 'dev') {
 
  } else if (env === 'cert') {
-    var urlBase = 'https://petstore.swagger.io/v2'
+    var urlBase = 'https://dummy.restapiexample.com/api/v1'
     var urlBooking = ''
-
  }
-
+//https://petstore.swagger.io/v2
  var config = {
      env: env,
      urlBase: urlBase,
